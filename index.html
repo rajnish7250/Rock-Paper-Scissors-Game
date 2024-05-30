@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors Game</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="try.css">
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
-
     <div class="choices">
         <div class="choice" id="rock">
             <img src="./images/rock.png">
@@ -21,24 +20,30 @@
         </div>
     </div>
 
-    <div class="score-board">
-        <div class="score" id="scoreword">Score:</div>
-        <div class="score">
-            <p id="user-score">0</p>
-            <p>You</p>
+    <div class="scoreboard">
+        <div class="user">
+            <p id="userscore">0</p>
+            <p>User</p>
         </div>
-
-        <div class="score">
-            <p id="comp-score">0</p>
-            <p>Comp</p>
+        <div class="comp">
+            <p id="compscore">0</p>
+            <p>Computer</p>
         </div>
     </div>
 
-    <div class="msg-container">
-        <p id="msg">
-            Play Your Move
-        </p>
+    <div class="msgboard">
+        <div class="msg">Play your game</div>
     </div>
-    <script src="app.js"></script>
+
+    <div class="scoretable">
+        <table>
+            <th>Sno.</th>
+            <th>User</th>
+            <th>Computer</th>
+            <th>Status</th>
+        </table>
+    </div>
+    
+    <script src="try.js"></script>
 </body>
 </html>
